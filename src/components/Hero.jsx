@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaInstagram, FaDownload } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
-import bamiwo from "../assets/images/Real_bamiwo.png";
+import bammie from "../assets/images/bammie.png";
 import handleDownload from "../utils/download";
 
 const Hero = () => {
@@ -73,7 +73,7 @@ const Hero = () => {
         </div>
         {/* Right Item */}
         <div className="w-1/2  ml-28 md:ml-0 md:pl-20">
-          <img src={bamiwo} alt="description" />
+          <img src={bammie} alt="description" />
         </div>
       </div>
     </section>
