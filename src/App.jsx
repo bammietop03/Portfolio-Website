@@ -6,7 +6,7 @@ import Skills from './components/Skills';
 import Experience from './components/Experience';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Portfolio from './components/portfolio';
+import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { ToastContainer } from 'react-toastify';
