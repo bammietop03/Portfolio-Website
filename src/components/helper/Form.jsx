@@ -8,8 +8,6 @@ const ContactForm = () => {
     const key = import.meta.env.VITE_EMAILJS_KEY;
     const form = useRef();
 
-    console.log(service, template, key);
-
     const sendEmail = (e) => {
       e.preventDefault();
 
