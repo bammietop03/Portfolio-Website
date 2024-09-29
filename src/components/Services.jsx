@@ -28,7 +28,7 @@ const Services = () => {
           </p>
           <button
             onClick={handleDownload}
-            className="text-teal-400  px-6 py-2 rounded-3xl hover:bg-teal-400 hover:text-black flex border border-teal-400 mr-4 w-[43%] justify-center self-center md:self-start"
+            className="text-teal-400  px-6 py-2 rounded-3xl hover:bg-teal-400 hover:text-black flex border border-teal-400 mr-4 md:w-[43%] justify-center self-center md:self-start"
           >
             Download CV <FaDownload className="mt-1 ml-2" />
           </button>

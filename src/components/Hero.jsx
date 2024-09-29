@@ -9,7 +9,7 @@ const Hero = () => {
     <section className="bg-gray-900 pt-10">
       <div className="container flex flex-col md:flex-row item-center  mx-auto max-w-7xl md:py-10 space-y-0 md:space-y-0">
         {/* Left Item */}
-        <div className="flex flex-col space-y-3 md:w-1/2 items-center md:items-start mr-7 py-10 sm:px-6">
+        <div className="flex flex-col space-y-3 md:w-1/2 items-center md:items-start mx-5 md:mx-0 md:mr-7 py-10 sm:px-6">
           <p className="text-teal-400 font-bold ">Software Engineer</p>
 
           <h1 className="text-white text-6xl font-bold text-center md:text-left">
@@ -25,7 +25,7 @@ const Hero = () => {
           <div className=" flex space-x-3">
             <button
               onClick={handleDownload}
-              className="text-teal-400  px-6 py-2 rounded-3xl hover:bg-teal-400 hover:text-black flex border border-teal-400 mr-4"
+              className="text-teal-400  px-4 md:px-6 py-2 rounded-3xl hover:bg-teal-400 hover:text-black flex border border-teal-400 mr-4"
             >
               Download CV <FaDownload className="mt-1 ml-2" />
             </button>

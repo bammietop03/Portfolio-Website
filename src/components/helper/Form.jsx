@@ -91,7 +91,7 @@ const ContactForm = () => {
         />
       </div>
       <button
-        className="md:w-[30%] w-[40%] bg-teal-400 rounded-md p-2 text-gray-900"
+        className="md:w-[30%] w-[43%] bg-teal-400 rounded-md p-2 text-gray-900"
         type="submit"
         value="Send"
       >
