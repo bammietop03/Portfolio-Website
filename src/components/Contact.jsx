@@ -19,7 +19,7 @@ const Contact = () => {
           <ContactForm />
         </div>
         {/* right Item */}
-        <div className="md:w-1/2  flex flex-col gap-8 justify-center items-start p-10 md:p-0 md:pl-28">
+        <div className="md:w-1/2  flex flex-col gap-8 justify-center items-start py-10 md:p-0 md:pl-28">
           <div className="flex gap-4">
             <div>
               <FaPhoneAlt
