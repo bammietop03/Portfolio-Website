@@ -1,3 +1,4 @@
+// Allows download
 const handleDownload = () => {
   const link = document.createElement("a");
   link.href = "/assets/cv.pdf"; // URL of the file
