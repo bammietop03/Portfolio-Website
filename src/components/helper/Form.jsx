@@ -3,28 +3,28 @@ import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 
 const ContactForm = () => {
-    const service = import.meta.env.VITE_SERVICE_ID;
-    const template = import.meta.env.VITE_TEMPLATE_ID;
-    const key = import.meta.env.VITE_EMAILJS_KEY;
-    const form = useRef();
+  const service = import.meta.env.VITE_SERVICE_ID;
+  const template = import.meta.env.VITE_TEMPLATE_ID;
+  const key = import.meta.env.VITE_EMAILJS_KEY;
+  const form = useRef();
 
-    const sendEmail = (e) => {
-      e.preventDefault();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-      emailjs
-        .sendForm(`${service}`, `${template}`, form.current, {
+    emailjs
+      .sendForm(`${service}`, `${template}`, form.current, {
         publicKey: `${key}`,
-        })
-        .then(
-          () => {
-            toast.success("Message sent successfully");
-            form.current.reset();
-          },
-          (error) => {
-            toast.error("Failed to send message");
-          },
-        );
-    };
+      })
+      .then(
+        () => {
+          toast.success("Message sent successfully");
+          form.current.reset();
+        },
+        (error) => {
+          toast.error("Failed to send message");
+        },
+      );
+  };
 
   return (
     <form
@@ -32,12 +32,12 @@ const ContactForm = () => {
       onSubmit={sendEmail}
       className="contact-form flex flex-col gap-6"
     >
-      <div className="flex gap-3">
+      <div className="flex flex-col md:flex-row gap-4">
         <input
           type="text"
           name="firstname"
           placeholder="Firstname"
-          className="p-2 bg-gray-900 rounded-md text-white w-1/2"
+          className="p-3 bg-gray-700 border border-gray-600 rounded-lg text-white w-full md:w-1/2 focus:outline-none focus:border-teal-400 focus:ring-2 focus:ring-teal-400/50 transition-all"
           required
         />
 
@@ -45,16 +45,16 @@ const ContactForm = () => {
           type="text"
           name="lastname"
           placeholder="Lastname"
-          className="p-2 bg-gray-900 rounded-md text-white w-1/2"
+          className="p-3 bg-gray-700 border border-gray-600 rounded-lg text-white w-full md:w-1/2 focus:outline-none focus:border-teal-400 focus:ring-2 focus:ring-teal-400/50 transition-all"
           required
         />
       </div>
-      <div className="flex gap-3">
+      <div className="flex flex-col md:flex-row gap-4">
         <input
           type="email"
           name="email"
           placeholder="Email address"
-          className="p-2 bg-gray-900 rounded-md text-white pl-3 w-1/2"
+          className="p-3 bg-gray-700 border border-gray-600 rounded-lg text-white w-full md:w-1/2 focus:outline-none focus:border-teal-400 focus:ring-2 focus:ring-teal-400/50 transition-all"
           required
         />
 
@@ -62,7 +62,7 @@ const ContactForm = () => {
           type="text"
           name="phone"
           placeholder="Phone number"
-          className="p-2 bg-gray-900 rounded-md text-white pl-3 w-1/2"
+          className="p-3 bg-gray-700 border border-gray-600 rounded-lg text-white w-full md:w-1/2 focus:outline-none focus:border-teal-400 focus:ring-2 focus:ring-teal-400/50 transition-all"
           required
         />
       </div>
@@ -70,7 +70,7 @@ const ContactForm = () => {
         <select
           name="type"
           defaultValue=""
-          className="w-full text-gray-400 p-2 bg-gray-900 rounded-md pl-3"
+          className="w-full text-gray-300 p-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-teal-400 focus:ring-2 focus:ring-teal-400/50 transition-all"
           required
         >
           <option value="" disabled>
@@ -86,12 +86,12 @@ const ContactForm = () => {
         <textarea
           name="message"
           placeholder="Type your message here..."
-          className="w-full h-28 text-white p-2 bg-gray-900 rounded-md"
+          className="w-full h-32 text-white p-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-teal-400 focus:ring-2 focus:ring-teal-400/50 transition-all resize-none"
           required
         />
       </div>
       <button
-        className="md:w-[30%] w-[43%] bg-teal-400 rounded-md p-2 text-gray-900"
+        className="w-full md:w-auto px-8 py-3 bg-teal-500 rounded-lg text-white font-semibold hover:bg-teal-400 hover:shadow-lg hover:shadow-teal-500/50 transition-all duration-300 transform hover:scale-105"
         type="submit"
         value="Send"
       >
