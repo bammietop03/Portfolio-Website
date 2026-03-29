@@ -6,7 +6,7 @@ import handleDownload from "../utils/download";
 
 const Hero = () => {
   return (
-    <section className="bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 pt-10 relative overflow-hidden">
+    <section className="bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 pt-10 pb-20 relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-20 left-10 w-72 h-72 bg-teal-400 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>

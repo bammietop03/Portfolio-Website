@@ -27,7 +27,7 @@ const Carousel = () => {
     <div className="carousel-container">
       <Slider {...settings}>
         {/* First slide - Warely */}
-        <div className="p-5 md:p-20">
+        <div className="p-5 md:p-10">
           <div className="flex flex-col-reverse md:flex-row justify-between items-center w-full">
             {/* Text section */}
             <div className="text-white md:w-[45%] md:pr-4">
